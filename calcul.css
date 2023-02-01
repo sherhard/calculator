@@ -1,0 +1,26 @@
+.calcul{
+	border: 2px solid black;
+	width: 600px;
+	margin:0 auto;
+	text-align: center;
+;
+}
+
+.operations{
+	padding: 20px;
+}
+
+.operations button{
+	width: 40px;
+	height: 40px;
+}
+.operations button:hover{
+	background: gold;
+}
+
+.inputs-blocks{
+	display: block;
+}
+.input-block{
+	display: inline-block;
+}
