@@ -8,7 +8,20 @@ let result=document.getElementById('result');
 
 let number1=document.getElementById('number1');
 let number2=document.getElementById('number2');
+
+
+let allButton=document.getElementsByClassName('bntNumber');
 	
+	for(let i=0; i<allButton.length; i++){
+		allButton[i].addEventListener('click',btn);
+	}
+
+	
+
+function btn(){
+	number1.value=this.value;
+	number2.value=this.value;
+}
 
 
 
