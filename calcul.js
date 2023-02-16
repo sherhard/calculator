@@ -1,10 +1,5 @@
 
-
-let buttonPlus=document.getElementById('buttonPlus');
-let buttonMinus=document.getElementById('buttonMinus');
-let buttonMultiply=document.getElementById('buttonMultiply');
-let buttonDevide=document.getElementById('buttonDevide');
-let result=document.getElementById('result');
+let operationButtons=document.getElementsByClassName('operation-button')
 
 let input1=document.getElementById('number1');
 let input2=document.getElementById('number2');
@@ -35,10 +30,9 @@ function onButtonOperation(eventObject){
 }
 
 
-	let arrayButton=[buttonPlus,buttonMinus,buttonMultiply,buttonDevide];
 
-for(let i=0; i<arrayButton.length; i++){
-	let operationButton=arrayButton[i];
+for(let i=0; i<operationButtons.length; i++){
+	let operationButton=operationButtons[i];
 	operationButton.addEventListener('click',onButtonOperation)
 }
 
