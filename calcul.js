@@ -28,13 +28,48 @@ function makeOperation(operationCode){
 }
 
 
-function onButtonOperation( eventObject){
+function onButtonOperation(eventObject){
 		let clickElement=eventObject.currentTarget;
 		let operation=clickElement.innerHTML;
 		makeOperation(operation)
 }
 
-buttonPlus.addEventListener('click',onButtonOperation); 
-buttonMinus.addEventListener('click',onButtonOperation); 
-buttonMultiply.addEventListener('click',onButtonOperation); 
-buttonDevide.addEventListener('click',onButtonOperation); 
+
+	let arrayButton=[buttonPlus,buttonMinus,buttonMultiply,buttonDevide];
+
+for(let i=0; i<arrayButton.length; i++){
+	let operationButton=arrayButton[i];
+	operationButton.addEventListener('click',onButtonOperation)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
